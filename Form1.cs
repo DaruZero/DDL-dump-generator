@@ -27,6 +27,17 @@ namespace DDL_dump_generator
                 MessageBox.Show("Insert a filename", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        private void buttonCopy_Click(object sender, EventArgs e)
+        {
+            if (textOutput.TextLength > 0)
+            {
+                textOutput.SelectAll();
+                textOutput.Copy();
+            }
+            else
+                SystemSounds.Exclamation.Play();
+        }
+
         private void Generate()
         {
             int start = (int)numStart.Value;
