@@ -10,6 +10,10 @@
     <Authors>DaruZero</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>C:\Users\matte\source\repos\DDL-dump-generator\LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/DaruZero/DDL-dump-generator</RepositoryUrl>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <FileVersion>1.0.1</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
