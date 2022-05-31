@@ -40,6 +40,7 @@
             this.buttonExport = new System.Windows.Forms.Button();
             this.textOutput = new System.Windows.Forms.TextBox();
             this.textFileName = new System.Windows.Forms.TextBox();
+            this.buttonCopy = new System.Windows.Forms.Button();
             this.groupProperties.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numFinal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStart)).BeginInit();
@@ -143,6 +144,7 @@
             // 
             // groupOutput
             // 
+            this.groupOutput.Controls.Add(this.buttonCopy);
             this.groupOutput.Controls.Add(this.buttonExport);
             this.groupOutput.Controls.Add(this.textOutput);
             this.groupOutput.Controls.Add(this.textFileName);
@@ -158,7 +160,7 @@
             // buttonExport
             // 
             this.buttonExport.BackColor = System.Drawing.Color.Gold;
-            this.buttonExport.Location = new System.Drawing.Point(362, 328);
+            this.buttonExport.Location = new System.Drawing.Point(604, 328);
             this.buttonExport.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(78, 24);
@@ -169,24 +171,35 @@
             // 
             // textOutput
             // 
-            this.textOutput.Location = new System.Drawing.Point(4, 29);
+            this.textOutput.Location = new System.Drawing.Point(5, 29);
             this.textOutput.Margin = new System.Windows.Forms.Padding(2);
             this.textOutput.Multiline = true;
             this.textOutput.Name = "textOutput";
             this.textOutput.ReadOnly = true;
             this.textOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textOutput.Size = new System.Drawing.Size(1011, 295);
+            this.textOutput.Size = new System.Drawing.Size(1009, 295);
             this.textOutput.TabIndex = 6;
             // 
             // textFileName
             // 
             this.textFileName.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textFileName.Location = new System.Drawing.Point(4, 328);
+            this.textFileName.Location = new System.Drawing.Point(686, 328);
             this.textFileName.Margin = new System.Windows.Forms.Padding(2);
             this.textFileName.Name = "textFileName";
             this.textFileName.PlaceholderText = "File name (.txt)";
             this.textFileName.Size = new System.Drawing.Size(328, 23);
             this.textFileName.TabIndex = 7;
+            // 
+            // buttonCopy
+            // 
+            this.buttonCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonCopy.Location = new System.Drawing.Point(5, 327);
+            this.buttonCopy.Name = "buttonCopy";
+            this.buttonCopy.Size = new System.Drawing.Size(78, 24);
+            this.buttonCopy.TabIndex = 6;
+            this.buttonCopy.Text = "Copy";
+            this.buttonCopy.UseVisualStyleBackColor = false;
+            this.buttonCopy.Click += new System.EventHandler(this.buttonCopy_Click);
             // 
             // Form1
             // 
@@ -226,5 +239,6 @@
         private ComboBox comboBoxSuffix;
         private Label label2;
         private Label label1;
+        private Button buttonCopy;
     }
 }
